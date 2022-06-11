@@ -20,8 +20,9 @@ public class quiz extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
 
         list=new ArrayList<>();
-
-
+        list.add(new modelclass("null"));
+        list.add(new modelclass("null"));
+        list.add(new modelclass("null"));
 
         new Handler().postDelayed(new Runnable() {
             @Override

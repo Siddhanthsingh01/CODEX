@@ -35,6 +35,8 @@
     <color name="brigth_yellow">#FFEA00</color>
     <color name="cadmium_yellow">#FDDA0D</color>
 
+    <color name="green">#66cc99</color>
+
     <color name="mtrl_textinput_default_box_stroke_color">@color/rich_blue</color>
 
 </resources>
