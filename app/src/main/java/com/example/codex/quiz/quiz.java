@@ -21,7 +21,7 @@ public class quiz extends AppCompatActivity {
 
         list=new ArrayList<>();
         list.add(new modelclass("what is your name","A","B","C","D","B"));
-        list.add(new modelclass("what is your qulification","A","B","C","D","Ans"));
+        list.add(new modelclass("what is your qulification","A","B","C","D","sohail"));
         list.add(new modelclass("what is your age","A","B","C","D","Ans"));
         list.add(new modelclass("what is your number","A","B","C","D","Ans"));
 
