@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "153229589723",
+    "project_id": "codex-4a5c4",
+    "storage_bucket": "codex-4a5c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153229589723:android:982010395fb46ab08fe0fe",
+        "android_client_info": {
+          "package_name": "com.example.codex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153229589723-n44oprbku8vnliuja93pmufbhne75136.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8wB6QhFrvR_9tlnAM5EMv4zXYNO0Llm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153229589723-n44oprbku8vnliuja93pmufbhne75136.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">codex</string>
+    <string name="image_desc_start">Health image</string>
+    <string name="health_slogan">A learning based coding mobile application</string>
+    <string name="login_textV">Hello there, \nWelcome Back</string>
+    <string name="sign_in_to_continue">Sign In to continue</string>
+    <string name="username">Username</string>
+    <string name="mail">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="go">Lets GO</string>
+    <string name="new_user_sign_up">New User? SIGN UP</string>
+    <string name="signup_tv_welcome">Welcome</string>
+    <string name="signup_to_start_your_tour">SignUp to start your tour</string>
+    <string name="already_login">Already Have An account? Login</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_no">Phone No</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="reset_password">Reset Your\nPassword</string>
+    <string name="enter_mail">Reset link will be send to your mail</string>
+    <string name="enter_et_otp">Enter OTP</string>
+    <string name="send_link">Send Link</string>
+
+    <string name="facebook_app_id">1232380023946339</string>
+    <string name="fb_login_protocol_scheme">fb1232380023946339</string>
+    <string name="facebook_logo">facebook logo</string>
+    <string name="google_logo">google logo</string>
+    <string name="medical_history">Medical History</string>
+    <string name="python">python</string>
+    <string name="java">Java</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="categories_for_you">Categories for you</string>
+    <string name="water_reminder">Water Reminder card</string>
+
+</resources>

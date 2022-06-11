@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".Logins.SignUp">
+
+        <ImageView
+            android:id="@+id/signup_act_iv_health"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/image_desc_start"
+            android:transitionName="logo_image"
+            app:srcCompat="@drawable/start_codex"
+            tools:ignore="ImageContrastCheck" />
+
+
+        <TextView
+            android:id="@+id/signup_act_tv_slogan_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/signup_tv_welcome"
+            android:textColor="@color/text_color"
+            android:textSize="40sp"
+            android:transitionName="logo_text" />
+
+
+        <TextView
+            android:id="@+id/signup_act_tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup_to_start_your_tour"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_et_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/full_name"
+                android:textColorHint="@color/text_color"
+                app:boxStrokeColor="@color/rich_blue"
+                app:errorIconDrawable="@null"
+                app:hintTextColor="@color/text_color"
+                app:startIconDrawable="@drawable/icon_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/text_color"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_et_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/mail"
+                android:textColorHint="@color/text_color"
+                android:transitionName="email_tran"
+                app:boxStrokeColor="@color/rich_blue"
+                app:errorIconDrawable="@null"
+                app:hintTextColor="@color/text_color"
+                app:startIconDrawable="@drawable/icon_mail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/text_color"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/signup_ccp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    app:ccpDialog_backgroundColor="@color/black"
+                    app:ccpDialog_fastScroller_bubbleColor="@color/eagle_green"
+                    app:ccpDialog_keyboardAutoPopup="false"
+                    app:ccpDialog_showCloseIcon="true"
+                    app:ccpDialog_textColor="@color/white"
+                    app:ccp_contentColor="@color/text_color"
+                    app:ccp_textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/signup_et_phone"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="3"
+                    android:hint="@string/phone_no"
+                    android:textColorHint="@color/text_color"
+                    app:boxStrokeColor="@color/rich_blue"
+                    app:errorIconDrawable="@null"
+                    app:hintTextColor="@color/text_color"
+                    app:startIconDrawable="@drawable/icon_phone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:textColor="@color/text_color"
+                        tools:ignore="TextContrastCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_et_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/password"
+                android:textColorHint="@color/text_color"
+                android:transitionName="password_tran"
+                app:boxStrokeColor="@color/rich_blue"
+                app:errorIconDrawable="@null"
+                app:hintTextColor="@color/text_color"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/text_color"
+                app:startIconDrawable="@drawable/icon_lock">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/comp_pass1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/text_color"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_et_confirmpassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/confirm_password"
+                android:textColorHint="@color/text_color"
+                android:transitionName="password_tran"
+                app:boxStrokeColor="@color/rich_blue"
+                app:boxStrokeErrorColor="@color/red"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@null"
+                app:hintTextColor="@color/text_color"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/text_color"
+                app:startIconDrawable="@drawable/icon_lock">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/comp_pass2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/text_color"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ProgressBar
+                android:id="@+id/signup_act_pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:progressTint="@color/text_color"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signup_act_bt_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/rich_blue"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/go"
+            android:textAlignment="center"
+            android:textColor="@color/text_color2"
+            android:textSize="18sp"
+            android:transitionName="button_tran"
+            app:cornerRadius="25dp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/signup_act_bt_existinguser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:text="@string/already_login"
+            android:textColor="@color/text_color"
+            android:transitionName="login_signup_tran" />
+
+    </LinearLayout>
+</ScrollView>

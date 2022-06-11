@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--Un changed for both-->
+    <color name="black_coral">#3E5C76</color>
+    <color name="beau_blue">#CFDEE7</color>
+
+    <color name="red">#FF0000</color>
+
+    <color name="eagle_green">#073B4C</color>
+    <color name="iceberg">#44C3EE</color>
+
+    <!--For back ground-->
+    <color name="back_ground">#121213</color>
+    <color name="background_menu">#0A1316</color>
+
+    <!--For text-->
+    <color name="text_color">#DEFFFFFF</color>
+    <color name="text_color2">#DE000000</color>
+    <color name="text_menu">#F1F1F1</color>
+
+    <!--different colours-->
+    <color name="pista_green">#92e3a9</color>
+    <color name="rich_blue">#48cae4</color>
+    <color name="pinkish_red">#f4978e</color>
+
+    <color name="brigth_yellow">#FFEA00</color>
+    <color name="cadmium_yellow">#FDDA0D</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color">@color/rich_blue</color>
+
+</resources>
