@@ -21,6 +21,8 @@ public class quiz extends AppCompatActivity {
 
         list=new ArrayList<>();
         list.add(new modelclass("null"));
+        list.add(new modelclass("null"));
+        list.add(new modelclass("null"));
 
         new Handler().postDelayed(new Runnable() {
             @Override
