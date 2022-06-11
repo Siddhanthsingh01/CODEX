@@ -76,6 +76,8 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:onClick="optionAClick"
+        android:id="@+id/cardOA"
         app:cardCornerRadius="5dp"
         android:layout_marginStart="10dp"
         android:layout_marginRight="10dp"
@@ -86,7 +88,7 @@
         android:layout_marginLeft="10dp">
 
         <TextView
-            android:id="@+id/card_optiona"
+            android:id="@+id/optiona"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
@@ -96,6 +98,8 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:onClick="optionBClick"
+        android:id="@+id/cardOB"
         app:cardCornerRadius="5dp"
         android:layout_marginStart="10dp"
         android:layout_marginRight="10dp"
@@ -106,7 +110,7 @@
         android:layout_marginLeft="10dp">
 
         <TextView
-            android:id="@+id/card_optionb"
+            android:id="@+id/optionb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
@@ -116,6 +120,8 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:onClick="optionCClick"
+        android:id="@+id/cardOC"
         app:cardCornerRadius="5dp"
         android:layout_marginStart="10dp"
         android:layout_marginRight="10dp"
@@ -126,7 +132,7 @@
         android:layout_marginLeft="10dp">
 
         <TextView
-            android:id="@+id/card_optionc"
+            android:id="@+id/optionc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
@@ -136,6 +142,8 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:onClick="optionDClick"
+        android:id="@+id/cardOD"
         app:cardCornerRadius="5dp"
         android:layout_marginStart="10dp"
         android:layout_marginRight="10dp"
@@ -146,7 +154,7 @@
         android:layout_marginLeft="10dp">
 
         <TextView
-            android:id="@+id/card_optiond"
+            android:id="@+id/optiond"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
@@ -157,6 +165,7 @@
 
 
     <LinearLayout
+        android:id="@+id/nextBtn"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="50dp"

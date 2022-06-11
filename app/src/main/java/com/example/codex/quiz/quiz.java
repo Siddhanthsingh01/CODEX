@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class quiz extends AppCompatActivity {
 
-    ArrayList<modelclass> list;
+    public static ArrayList<modelclass> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,11 @@ public class quiz extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
 
         list=new ArrayList<>();
-        list.add(new modelclass("null"));
-        list.add(new modelclass("null"));
+        list.add(new modelclass("what is your name","A","B","C","D","B"));
+        list.add(new modelclass("what is your qulification","A","B","C","D","Ans"));
+        list.add(new modelclass("what is your age","A","B","C","D","Ans"));
+        list.add(new modelclass("what is your num","A","B","C","D","Ans"));
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
