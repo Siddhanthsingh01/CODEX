@@ -14,7 +14,14 @@
         android:padding="20dp"
         tools:context=".Logins.SignUp">
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="80dp"
+            >
+
         <ImageView
+            android:scaleType="fitXY"
             android:id="@+id/signup_act_iv_health"
             android:layout_width="150dp"
             android:layout_height="150dp"
@@ -23,12 +30,13 @@
             app:srcCompat="@drawable/start_codex"
             tools:ignore="ImageContrastCheck" />
 
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/signup_act_tv_slogan_welcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-15dp"
+            android:layout_marginTop="-5dp"
             android:fontFamily="@font/ubuntu_bold"
             android:text="@string/signup_tv_welcome"
             android:textColor="@color/text_color"
@@ -173,7 +181,7 @@
                 android:textColorHint="@color/text_color"
                 android:transitionName="password_tran"
                 app:boxStrokeColor="@color/rich_blue"
-                app:boxStrokeErrorColor="@color/red"
+                app:boxStrokeErrorColor="@color/rich_blue"
                 app:errorEnabled="true"
                 app:errorIconDrawable="@null"
                 app:hintTextColor="@color/text_color"
@@ -208,7 +216,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="5dp"
-            android:backgroundTint="@color/rich_blue"
+            android:backgroundTint="@color/light_red"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             android:text="@string/go"

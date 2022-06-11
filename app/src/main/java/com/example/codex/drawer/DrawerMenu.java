@@ -83,23 +83,9 @@ public class DrawerMenu{
 //                break;
 
 
-            case R.id.nav_cat1:
-                Toast.makeText(context, "cat1", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.nav_cat2:
-                Toast.makeText(context, "cat2", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.nav_cat3:
-                Toast.makeText(context, "cat3", Toast.LENGTH_SHORT).show();
-                break;
 
 
-            case R.id.nav_share:
-                Toast.makeText(context, "shared", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.nav_rate_us:
-                Toast.makeText(context, "rate", Toast.LENGTH_SHORT).show();
-                break;
+
         }
     }
 

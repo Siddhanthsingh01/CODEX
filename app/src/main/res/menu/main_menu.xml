@@ -40,43 +40,6 @@
         </menu>
     </item>
 
-    <item android:title="categories">
-        <menu>
-            <group android:checkableBehavior="single">
-                <item
-                    android:id="@+id/nav_cat1"
-                    android:title="cat1"
-                    android:icon="@drawable/icon_phone"/>
 
-                <item
-                    android:id="@+id/nav_cat2"
-                    android:title="cat2"
-                    android:icon="@drawable/icon_phone"/>
-
-                <item
-                    android:id="@+id/nav_cat3"
-                    android:title="cat3"
-                    android:icon="@drawable/icon_phone"/>
-
-            </group>
-        </menu>
-    </item>
-
-    <item android:title="share">
-        <menu>
-            <group>
-                <item
-                    android:id="@+id/nav_share"
-                    android:title="share"
-                    android:icon="@drawable/icon_phone"/>
-
-                <item
-                    android:id="@+id/nav_rate_us"
-                    android:title="rate"
-                    android:icon="@drawable/icon_phone"/>
-
-            </group>
-        </menu>
-    </item>
 
 </menu>

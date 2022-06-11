@@ -65,6 +65,12 @@ public class homeOptions extends AppCompatActivity implements NavigationView.OnN
 
         keyin = new KeyboardHideInternet();
 
+        //on clicking logout image
+        binding.homeActIvLogout.setOnClickListener(view -> {
+            FirebaseAuth.getInstance().signOut();
+            //finishing received activity
+            finish();
+        });
 
         //java catagory card view
         binding.java.setOnClickListener(view -> {
