@@ -14,11 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Codex">
         <activity
-            android:name=".wonactivity"
+            android:name=".quiz.wonactivity"
             android:exported="false" />
-        <activity
-            android:name=".WonActivity"
-            android:exported="false" />
+
         <activity
             android:name=".quiz.dashboardactivity"
             android:exported="false" />

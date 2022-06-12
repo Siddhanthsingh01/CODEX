@@ -71,7 +71,7 @@ public class dashboardactivity extends AppCompatActivity {
                 dialog.findViewById(R.id.timeout).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(dashboardactivity.this, homeOptions.class);
+                        Intent intent = new Intent(dashboardactivity.this, wonactivity.class);
                         startActivity(intent);
                     }
                 });
@@ -157,6 +157,8 @@ public class dashboardactivity extends AppCompatActivity {
 
     private void Gamewon() {
         Intent intent = new Intent(dashboardactivity.this, wonactivity.class);
+        intent.putExtra("correct", correctCount);
+        intent.putExtra("wrong", wrongCount);
         startActivity(intent);
     }
 

@@ -41,11 +41,12 @@
 
 
     <RelativeLayout
+        android:id="@+id/rl2"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_below="@+id/toolbar"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="30dp">
 
         <com.mikhaellopez.circularprogressbar.CircularProgressBar
             android:id="@+id/circularProgressBar"
@@ -65,9 +66,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="15/20"
+            android:text=""
             android:textColor="@color/white"
             android:textSize="22dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rl2"
+        >
+
+        <LinearLayout
+            android:id="@+id/btnshare"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/share_shape"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Share your score"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
 
 
     </RelativeLayout>

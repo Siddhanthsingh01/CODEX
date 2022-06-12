@@ -18,6 +18,10 @@ public class modelclass {
         this.ans = ans;
     }
 
+    public modelclass(){
+
+    }
+
     public String getQuestion() {
         return Question;
     }
