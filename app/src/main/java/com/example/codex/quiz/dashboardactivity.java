@@ -46,7 +46,12 @@ public class dashboardactivity extends AppCompatActivity {
         Collections.shuffle(allQuestionsList);
         modelclass = list.get(index);
 
-        setAllData();
+        cardOA.setBackgroundColor(getResources().getColor(R.color.white));
+        cardOB.setBackgroundColor(getResources().getColor(R.color.white));
+        cardOC.setBackgroundColor(getResources().getColor(R.color.white));
+        cardOD.setBackgroundColor(getResources().getColor(R.color.white));
+
+        nextBtn.setClickable(false);
 
         countDownTimer = new CountDownTimer(20000, 1000) {
             @Override
@@ -76,7 +81,7 @@ public class dashboardactivity extends AppCompatActivity {
             }
         }.start();
 
-
+        setAllData();
     }
 
     private void setAllData() {
@@ -86,35 +91,42 @@ public class dashboardactivity extends AppCompatActivity {
         optionb.setText(modelclass.getoB());
         optionc.setText(modelclass.getoC());
         optiond.setText(modelclass.getoD());
+        timerValue = 20;
+        countDownTimer.cancel();
+        countDownTimer.start();
+
     }
 
     private void Hooks() {
         progressBar = findViewById(R.id.quiz_timer);
         card_question = findViewById(R.id.card_question);
-        optiona = findViewById(R.id.optiona);
-        optionb = findViewById(R.id.optionb);
-        optionc = findViewById(R.id.optionc);
-        optiond = findViewById(R.id.optiond);
+        optiona = findViewById(R.id.card_optiona);
+        optionb = findViewById(R.id.card_optionb);
+        optionc = findViewById(R.id.card_optionc);
+        optiond = findViewById(R.id.card_optiond);
 
-        cardOA = findViewById(R.id.cardOA);
-        cardOB = findViewById(R.id.cardOB);
-        cardOC = findViewById(R.id.cardOC);
-        cardOD = findViewById(R.id.cardOD);
+        cardOA = findViewById(R.id.cardA);
+        cardOB = findViewById(R.id.cardB);
+        cardOC = findViewById(R.id.cardC);
+        cardOD = findViewById(R.id.cardD);
 
         nextBtn = findViewById(R.id.nextBtn);
 
     }
 
-    public void Correct() {
+    public void Correct(CardView cardView) {
+
+        cardView.setBackgroundColor(getResources().getColor(R.color.green));
 
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-
+            public void onClick(View v) {
                 correctCount++;
                 index++;
                 modelclass = list.get(index);
+                resetColor();
                 setAllData();
+                enableButton();
             }
         });
 
@@ -122,17 +134,17 @@ public class dashboardactivity extends AppCompatActivity {
 
     public void Wrong(CardView cardOA) {
 
-        cardOA.setCardBackgroundColor(getResources().getColor(R.color.red));
-
+        cardOA.setBackgroundColor(getResources().getColor(R.color.red));
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 wrongCount++;
                 if (index < list.size() - 1) {
                     index++;
                     modelclass = list.get(index);
-                    setAllData();
                     resetColor();
+                    setAllData();
+                    enableButton();
                 } else {
                     Gamewon();
                 }
@@ -145,8 +157,6 @@ public class dashboardactivity extends AppCompatActivity {
 
     private void Gamewon() {
         Intent intent = new Intent(dashboardactivity.this, wonactivity.class);
-        intent.putExtra("correct", correctCount);
-        intent.putExtra("wrong", wrongCount);
         startActivity(intent);
     }
 
@@ -165,7 +175,6 @@ public class dashboardactivity extends AppCompatActivity {
     }
 
     public void resetColor() {
-        cardOA.setCardBackgroundColor(getResources().getColor(R.color.white));
         cardOA.setBackgroundColor(getResources().getColor(R.color.white));
         cardOB.setBackgroundColor(getResources().getColor(R.color.white));
         cardOC.setBackgroundColor(getResources().getColor(R.color.white));
@@ -176,18 +185,17 @@ public class dashboardactivity extends AppCompatActivity {
     public void optionAClick(View view) {
         disableButton();
         nextBtn.setClickable(true);
-
         if (modelclass.getoA().equals(modelclass.getAns())) {
             cardOA.setCardBackgroundColor(getResources().getColor(R.color.green));
 
             if (index < list.size() - 1) {
-                index++;
-                modelclass = list.get(index);
-                setAllData();
-                resetColor();
+                Correct(cardOA);
+
             } else {
                 Gamewon();
+
             }
+
         } else {
             Wrong(cardOA);
         }
@@ -200,10 +208,7 @@ public class dashboardactivity extends AppCompatActivity {
             cardOB.setCardBackgroundColor(getResources().getColor(R.color.green));
 
             if (index < list.size() - 1) {
-                index++;
-                modelclass = list.get(index);
-                setAllData();
-                resetColor();
+                Correct(cardOB);
             } else {
                 Gamewon();
             }
@@ -220,10 +225,7 @@ public class dashboardactivity extends AppCompatActivity {
             cardOC.setCardBackgroundColor(getResources().getColor(R.color.green));
 
             if (index < list.size() - 1) {
-                index++;
-                modelclass = list.get(index);
-                setAllData();
-                resetColor();
+                Correct(cardOC);
             } else {
                 Gamewon();
             }
@@ -240,10 +242,7 @@ public class dashboardactivity extends AppCompatActivity {
             cardOD.setCardBackgroundColor(getResources().getColor(R.color.green));
 
             if (index < list.size() - 1) {
-                index++;
-                modelclass = list.get(index);
-                setAllData();
-                resetColor();
+                Correct(cardOD);
             } else {
                 Gamewon();
             }
