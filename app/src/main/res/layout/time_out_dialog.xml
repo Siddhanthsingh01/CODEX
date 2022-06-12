@@ -5,10 +5,10 @@
     android:layout_width="250dp"
     android:layout_height="250dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="30dp"
-    android:background="#ff9999"
+    android:background="@drawable/next_btn_shape"
     android:layout_gravity="center"
-    app:cardBackgroundColor="#ff9999"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="30dp"
     >
 
     <LinearLayout

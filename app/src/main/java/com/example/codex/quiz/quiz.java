@@ -29,6 +29,7 @@ public class quiz extends AppCompatActivity {
         list=new ArrayList<>();
         databaseReference= FirebaseDatabase.getInstance().getReference("Question");
 
+
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -50,19 +51,12 @@ public class quiz extends AppCompatActivity {
             }
         });
 
-//        list.add(new modelclass("what is your name","A","B","C","D","B"));
-//        list.add(new modelclass("what is your qulification","A","B","C","D","D"));
-//        list.add(new modelclass("what is your age","A","B","C","D","A"));
-//        list.add(new modelclass("what is your number","A","B","C","D","C"));
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
 
-//                Intent intent=new Intent(quiz.this, dashboardactivity.class);
-//                startActivity(intent);
             }
-        },1500);
+        },100);
 
 
     }

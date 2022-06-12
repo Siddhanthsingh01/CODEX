@@ -7,15 +7,19 @@ import androidx.cardview.widget.CardView;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.codex.R;
+import com.example.codex.category.java;
 import com.example.codex.homeOptions;
+import com.example.codex.java_list_select.java_one;
 import com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar;
 
 import java.util.Collections;
@@ -34,6 +38,8 @@ public class dashboardactivity extends AppCompatActivity {
     int correctCount = 0;
     int wrongCount = 0;
     LinearLayout nextBtn;
+    ImageView icback;
+    TextView exit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +88,24 @@ public class dashboardactivity extends AppCompatActivity {
         }.start();
 
         setAllData();
+
+        icback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(dashboardactivity.this, java_one.class);
+                startActivity(intent);
+            }
+        });
+
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(dashboardactivity.this, java_one.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     private void setAllData() {
@@ -111,6 +135,9 @@ public class dashboardactivity extends AppCompatActivity {
         cardOD = findViewById(R.id.cardD);
 
         nextBtn = findViewById(R.id.nextBtn);
+
+        icback = findViewById(R.id.icback);
+        exit = findViewById(R.id.exit);
 
     }
 

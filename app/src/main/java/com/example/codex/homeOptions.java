@@ -77,7 +77,7 @@ public class homeOptions extends AppCompatActivity implements NavigationView.OnN
             if(!keyin.isConnected(homeOptions.this))
                 keyin.connectionAlert(homeOptions.this);
             else
-                startActivity(new Intent(this, quiz.class));
+                startActivity(new Intent(this, java.class));
         });
 
 
