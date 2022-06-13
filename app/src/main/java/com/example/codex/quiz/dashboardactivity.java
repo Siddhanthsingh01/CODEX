@@ -93,7 +93,9 @@ public class dashboardactivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(dashboardactivity.this, java_one.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                 startActivity(intent);
+                finish();
             }
         });
 

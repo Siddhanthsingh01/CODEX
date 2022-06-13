@@ -153,7 +153,7 @@ public class java_one extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         Intent intent = new Intent(java_one.this, quiz.class);
-                        intent.putExtra("url","https://www.w3schools.com/java/tryjava.asp?filename=demo_compiler");
+                        intent.putExtra("qPath","Question");
                         startActivity(intent);
                     }
                 });

@@ -21,13 +21,20 @@ public class quiz extends AppCompatActivity {
     public static ArrayList<modelclass> list;
     DatabaseReference databaseReference;
 
+    String quizPath = "";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
+        Intent intent = getIntent();
+        quizPath = intent.getStringExtra("qPath");
+
+
         list=new ArrayList<>();
-        databaseReference= FirebaseDatabase.getInstance().getReference("Question");
+        databaseReference= FirebaseDatabase.getInstance().getReference(quizPath);
 
 
         databaseReference.addValueEventListener(new ValueEventListener() {
