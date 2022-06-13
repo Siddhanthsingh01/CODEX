@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:fontFamily="@font/aladin"
-                android:text="Hello "
+                android:text="Hello world !"
                 android:textAlignment="center"
                 android:textColor="@color/rich_blue"
                 android:textSize="24dp" />
@@ -104,7 +104,7 @@
         app:layout_constraintBottom_toTopOf="@+id/add_fab"
         app:layout_constraintEnd_toEndOf="@+id/add_fab"
         app:layout_constraintStart_toStartOf="@+id/add_fab"
-        app:srcCompat="@drawable/quiz" />
+        app:srcCompat="@drawable/quizfab" />
 
     <!--Action name text for the add alarm button-->
     <!--Make sure that you are constraining this Text to

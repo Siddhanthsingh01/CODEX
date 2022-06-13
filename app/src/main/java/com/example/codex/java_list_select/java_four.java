@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.codex.R;
 import com.example.codex.compiler.compiler;
+import com.example.codex.quiz.quiz;
 import com.github.barteksc.pdfviewer.PDFView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -151,7 +152,9 @@ public class java_four extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(java_four.this, "Alarm Added", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(java_four.this, quiz.class);
+                        intent.putExtra("qPath","javafour");
+                        startActivity(intent);
                     }
                 });
 

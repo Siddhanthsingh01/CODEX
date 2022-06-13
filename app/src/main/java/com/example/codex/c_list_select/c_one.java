@@ -14,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.codex.R;
 import com.example.codex.compiler.compiler;
+import com.example.codex.python_list_select.python_four;
+import com.example.codex.quiz.quiz;
 import com.github.barteksc.pdfviewer.PDFView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -151,7 +153,9 @@ public class c_one extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(c_one.this, "Alarm Added", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(c_one.this, quiz.class);
+                        intent.putExtra("qPath","cone");
+                        startActivity(intent);
                     }
                 });
 
