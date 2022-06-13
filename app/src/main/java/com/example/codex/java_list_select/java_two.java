@@ -153,7 +153,9 @@ public class java_two extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         Intent intent = new Intent(java_two.this, quiz.class);
+                        intent.putExtra("qPath","Question1");
                         startActivity(intent);
+
                     }
                 });
 
