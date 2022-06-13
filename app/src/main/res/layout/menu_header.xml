@@ -21,6 +21,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/user_menu_icon"/>
+
         <TextView
             android:id="@+id/menu_logo"
             android:layout_width="wrap_content"
@@ -36,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:fontFamily="@font/ubuntu"
-            android:text="@string/health_slogan"
+            android:text="Your Health come first"
             android:textColor="@color/beau_blue"
             android:textSize="14sp" />
 
@@ -44,11 +49,9 @@
 
 
     <ImageView
-        
         android:id="@+id/img"
-        android:scaleType="fitXY"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:src="@drawable/start_codex"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

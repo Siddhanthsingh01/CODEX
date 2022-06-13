@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -82,7 +83,7 @@ public class dashboardactivity extends AppCompatActivity {
                     }
                 });
 
-                dialog.show();
+//                dialog.show();
 
             }
         }.start();
@@ -92,18 +93,21 @@ public class dashboardactivity extends AppCompatActivity {
         icback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(dashboardactivity.this, java_one.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                Intent intent = new Intent(dashboardactivity.this, homeOptions.class);
                 startActivity(intent);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                 finish();
+
             }
         });
 
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(dashboardactivity.this, java_one.class);
+                Intent intent = new Intent(dashboardactivity.this, homeOptions.class);
                 startActivity(intent);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                finish();
             }
         });
 
@@ -281,5 +285,7 @@ public class dashboardactivity extends AppCompatActivity {
             Wrong(cardOD);
         }
     }
+
+
 
 }

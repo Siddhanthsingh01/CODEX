@@ -62,15 +62,16 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/signup_et_name"
-                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:hint="@string/full_name"
                 android:textColorHint="@color/text_color"
-                app:boxStrokeColor="@color/rich_blue"
+                app:boxStrokeColor="@color/purple"
                 app:errorIconDrawable="@null"
                 app:hintTextColor="@color/text_color"
+                app:startIconTint="@color/purple"
                 app:startIconDrawable="@drawable/icon_name">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -84,16 +85,17 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/signup_et_email"
-                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:hint="@string/mail"
                 android:textColorHint="@color/text_color"
                 android:transitionName="email_tran"
-                app:boxStrokeColor="@color/rich_blue"
+                app:boxStrokeColor="@color/purple"
                 app:errorIconDrawable="@null"
                 app:hintTextColor="@color/text_color"
+                app:startIconTint="@color/purple"
                 app:startIconDrawable="@drawable/icon_mail">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -126,16 +128,17 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/signup_et_phone"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="3"
                     android:hint="@string/phone_no"
                     android:textColorHint="@color/text_color"
-                    app:boxStrokeColor="@color/rich_blue"
+                    app:boxStrokeColor="@color/purple"
                     app:errorIconDrawable="@null"
                     app:hintTextColor="@color/text_color"
+                    app:startIconTint="@color/purple"
                     app:startIconDrawable="@drawable/icon_phone">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -149,18 +152,19 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/signup_et_password"
-                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:hint="@string/password"
                 android:textColorHint="@color/text_color"
                 android:transitionName="password_tran"
-                app:boxStrokeColor="@color/rich_blue"
+                app:boxStrokeColor="@color/purple"
                 app:errorIconDrawable="@null"
                 app:hintTextColor="@color/text_color"
                 app:passwordToggleEnabled="true"
                 app:passwordToggleTint="@color/text_color"
+                app:startIconTint="@color/purple"
                 app:startIconDrawable="@drawable/icon_lock">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -174,19 +178,20 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/signup_et_confirmpassword"
-                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/confirm_password"
                 android:textColorHint="@color/text_color"
                 android:transitionName="password_tran"
-                app:boxStrokeColor="@color/rich_blue"
+                app:boxStrokeColor="@color/purple"
                 app:boxStrokeErrorColor="@color/rich_blue"
                 app:errorEnabled="true"
                 app:errorIconDrawable="@null"
                 app:hintTextColor="@color/text_color"
                 app:passwordToggleEnabled="true"
                 app:passwordToggleTint="@color/text_color"
+                app:startIconTint="@color/purple"
                 app:startIconDrawable="@drawable/icon_lock">
 
                 <com.google.android.material.textfield.TextInputEditText

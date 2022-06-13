@@ -60,16 +60,17 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/login_act_et_email"
-                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:hint="@string/mail"
                 android:textColorHint="@color/text_color"
                 android:transitionName="email_tran"
-                app:boxStrokeColor="@color/rich_blue"
                 app:errorIconDrawable="@null"
+                app:boxStrokeColor="@color/purple"
                 app:hintTextColor="@color/text_color"
+                app:startIconTint="@color/purple"
                 app:startIconDrawable="@drawable/icon_mail">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -84,17 +85,18 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/login_act_et_password"
-                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
                 android:textColorHint="@color/text_color"
                 android:transitionName="password_tran"
-                app:boxStrokeColor="@color/rich_blue"
+                app:boxStrokeColor="@color/purple"
                 app:errorIconDrawable="@null"
                 app:hintTextColor="@color/text_color"
                 app:passwordToggleEnabled="true"
                 app:passwordToggleTint="@color/text_color"
+                app:startIconTint="@color/purple"
                 app:startIconDrawable="@drawable/icon_lock">
 
                 <com.google.android.material.textfield.TextInputEditText

@@ -197,7 +197,7 @@ public class homeOptions extends AppCompatActivity implements NavigationView.OnN
         //says the current clicked item
         binding.navigationView.setNavigationItemSelectedListener(this);
         //default checked item
-        binding.navigationView.setCheckedItem(R.id.nav_home1);
+//        binding.navigationView.setCheckedItem(R.id.nav_home1);
 
         //calling update nav to set name,mail for nav header
         updateMenuData();

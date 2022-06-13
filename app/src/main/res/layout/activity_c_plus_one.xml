@@ -29,7 +29,7 @@
                 android:fontFamily="@font/aladin"
                 android:text="Hello world"
                 android:textAlignment="center"
-                android:textColor="@color/rich_blue"
+                android:textColor="@color/purple"
                 android:textSize="24dp" />
 
 
@@ -88,6 +88,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:src="@drawable/compiler"
+        app:backgroundTint="@color/purple"
         app:fabSize="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -100,6 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
+        app:backgroundTint="@color/purple"
         app:fabSize="normal"
         app:layout_constraintBottom_toTopOf="@+id/add_fab"
         app:layout_constraintEnd_toEndOf="@+id/add_fab"
@@ -128,6 +130,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         app:fabSize="normal"
+        app:backgroundTint="@color/purple"
         app:layout_constraintBottom_toTopOf="@+id/add_alarm_fab"
         app:layout_constraintEnd_toEndOf="@+id/add_alarm_fab"
         app:layout_constraintStart_toStartOf="@+id/add_alarm_fab"

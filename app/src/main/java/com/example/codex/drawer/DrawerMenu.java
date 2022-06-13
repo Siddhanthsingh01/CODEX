@@ -1,7 +1,10 @@
 package com.example.codex.drawer;
 
+import static com.facebook.FacebookSdk.getApplicationContext;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
@@ -9,9 +12,17 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.codex.Logins.ForgotPassword;
+import com.example.codex.MainActivity;
 import com.example.codex.R;
+import com.example.codex.category.clang;
+import com.example.codex.compiler.compiler;
+import com.example.codex.homeOptions;
+import com.example.codex.java_list_select.java_one;
+import com.example.codex.quiz.dashboardactivity;
+import com.google.firebase.auth.FirebaseAuth;
 
-public class DrawerMenu{
+public class DrawerMenu {
 
     //animating drawer var
     static final float END_SCALE = 0.7f;
@@ -40,7 +51,7 @@ public class DrawerMenu{
 
             @Override
             public void onDrawerOpened(@NonNull View drawerView) {
-               menuTrigger.setVisibility(View.INVISIBLE);
+                menuTrigger.setVisibility(View.INVISIBLE);
             }
 
             @Override
@@ -56,34 +67,21 @@ public class DrawerMenu{
     }
 
     @SuppressLint("NonConstantResourceId")
-    public void navigateMenu(MenuItem item, Context context){
+    public void navigateMenu(MenuItem item, Context context) {
 
         switch (item.getItemId()) {
-            case R.id.nav_home1:
-                Toast.makeText(context, "Home1", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.nav_home2:
-                Toast.makeText(context, "Home2", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.nav_home3:
-                Toast.makeText(context, "Home3", Toast.LENGTH_SHORT).show();
+
+            case R.id.javacomiler:
+
                 break;
 
-
-            case R.id.nav_login:
-                Toast.makeText(context, "login", Toast.LENGTH_SHORT).show();
-                break;
             case R.id.nav_forgot:
-                Toast.makeText(context, "forgot", Toast.LENGTH_SHORT).show();
+
                 break;
-//            case R.id.nav_logout:
-//                FirebaseAuth.getInstance().signOut();
-//                //finishing received activity
-//                callerActivity.finish();
-//                break;
-
-
-
+            case R.id.nav_logout:
+                FirebaseAuth.getInstance().signOut();
+                //finishing received activity
+                break;
 
 
         }
