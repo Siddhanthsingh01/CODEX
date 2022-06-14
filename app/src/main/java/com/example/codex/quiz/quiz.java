@@ -50,6 +50,7 @@ public class quiz extends AppCompatActivity {
                 Intent intent=new Intent(quiz.this, dashboardactivity.class);
                 startActivity(intent);
 
+
             }
 
             @Override

@@ -5,12 +5,11 @@ import static com.example.codex.quiz.quiz.list;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -18,9 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.codex.R;
-import com.example.codex.category.java;
 import com.example.codex.homeOptions;
-import com.example.codex.java_list_select.java_one;
 import com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar;
 
 import java.util.Collections;
@@ -85,7 +82,7 @@ public class dashboardactivity extends AppCompatActivity {
                     }
                 });
 
-                dialog.show();
+//                dialog.show();
 
             }
         }.start();
@@ -95,7 +92,7 @@ public class dashboardactivity extends AppCompatActivity {
         icback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(dashboardactivity.this, homeOptions.class);
+                Intent intent = new Intent(dashboardactivity.this, wonactivity.class);
                 startActivity(intent);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                 finish();
@@ -106,15 +103,16 @@ public class dashboardactivity extends AppCompatActivity {
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(dashboardactivity.this, homeOptions.class);
+                Intent intent = new Intent(dashboardactivity.this, wonactivity.class);
                 startActivity(intent);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                 finish();
             }
         });
 
-
     }
+
+
 
     private void setAllData() {
 
@@ -286,6 +284,12 @@ public class dashboardactivity extends AppCompatActivity {
         } else {
             Wrong(cardOD);
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 
 }
