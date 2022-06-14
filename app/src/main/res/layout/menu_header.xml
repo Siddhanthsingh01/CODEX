@@ -5,8 +5,9 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="170dp"
-    android:background="@color/black_coral"
+    android:background="@color/white"
     android:paddingLeft="15dp">
+
 
     <LinearLayout
         android:id="@+id/relativeLayout2"
@@ -19,46 +20,52 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_weight="3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/user_menu_icon"/>
 
         <TextView
+            android:paddingStart="30dp"
+            android:paddingEnd="25dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
             android:id="@+id/menu_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/aladin"
             android:text="@string/app_name"
-            android:textColor="@color/beau_blue"
-            android:textSize="26sp" />
+            android:textColor="@color/purple"
+            android:textSize="50dp" />
 
         <TextView
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
             android:id="@+id/menu_slogan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="30dp"
             android:fontFamily="@font/ubuntu"
-            android:text="Your Health come first"
-            android:textColor="@color/beau_blue"
-            android:textSize="14sp" />
+            android:text="@string/health_slogan"
+            android:textColor="@color/purple"
+            android:textSize="15dp" />
 
     </LinearLayout>
-
 
     <ImageView
         android:id="@+id/img"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/start_codex"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_weight="2"
         app:layout_constraintStart_toEndOf="@+id/relativeLayout2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/start_"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

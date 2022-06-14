@@ -364,8 +364,7 @@ public class homeOptions extends AppCompatActivity implements NavigationView.OnN
             //finishing received activity
             finish();
             startActivity(new Intent(this, ForgotPassword.class));
-        } else if (item.getItemId() == R.id.nav_exit) {
-            super.onBackPressed();
+
         }
 
         binding.drawerLayout.closeDrawer(GravityCompat.START);

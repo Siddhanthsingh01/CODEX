@@ -66,7 +66,7 @@ public class wonactivity extends AppCompatActivity {
         btnshare = findViewById(R.id.btnshare);
 
         circularProgressBar.setProgress(correct);
-        resulttext.setText(correct + "/10");
+        resulttext.setText(correct + "/5");
 
         btnshare.setOnClickListener(new View.OnClickListener() {
             @Override
