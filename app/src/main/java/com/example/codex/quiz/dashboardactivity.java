@@ -78,12 +78,14 @@ public class dashboardactivity extends AppCompatActivity {
                 dialog.findViewById(R.id.timeout).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(dashboardactivity.this, wonactivity.class);
+                        Intent intent = new Intent(dashboardactivity.this, homeOptions.class);
                         startActivity(intent);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                        finish();
                     }
                 });
 
-//                dialog.show();
+                dialog.show();
 
             }
         }.start();
@@ -285,7 +287,5 @@ public class dashboardactivity extends AppCompatActivity {
             Wrong(cardOD);
         }
     }
-
-
 
 }

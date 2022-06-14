@@ -6,22 +6,22 @@
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/javacomiler"
-                    android:icon="@drawable/icon_phone"
+                    android:icon="@drawable/compiler"
                     android:title="Java" />
 
                 <item
                     android:id="@+id/pythoncomiler"
-                    android:icon="@drawable/icon_phone"
+                    android:icon="@drawable/compiler"
                     android:title="Python" />
 
                 <item
                     android:id="@+id/ccomiler"
-                    android:icon="@drawable/icon_phone"
+                    android:icon="@drawable/compiler"
                     android:title="C language" />
 
                 <item
                     android:id="@+id/cpluscomiler"
-                    android:icon="@drawable/icon_phone"
+                    android:icon="@drawable/compiler"
                     android:title="C plus language" />
 
             </group>
@@ -33,22 +33,22 @@
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/javaquiz"
-                    android:icon="@drawable/icon_phone"
+                    android:icon="@drawable/quizfab"
                     android:title="Java" />
 
                 <item
                     android:id="@+id/pythonquiz"
-                    android:icon="@drawable/icon_phone"
+                    android:icon="@drawable/quizfab"
                     android:title="Python" />
 
                 <item
                     android:id="@+id/cquiz"
-                    android:icon="@drawable/icon_phone"
+                    android:icon="@drawable/quizfab"
                     android:title="C language" />
 
                 <item
                     android:id="@+id/cplusquiz"
-                    android:icon="@drawable/icon_phone"
+                    android:icon="@drawable/quizfab"
                     android:title="C plus language" />
 
             </group>
@@ -62,17 +62,17 @@
 
                 <item
                     android:id="@+id/nav_forgot"
-                    android:icon="@drawable/icon_phone"
-                    android:title="forget" />
+                    android:icon="@drawable/forgot_password"
+                    android:title="Forget" />
 
                 <item
                     android:id="@+id/nav_logout"
-                    android:icon="@drawable/icon_phone"
-                    android:title="logout" />
+                    android:icon="@drawable/log_out"
+                    android:title="Logout" />
 
                 <item
                     android:id="@+id/nav_exit"
-                    android:icon="@drawable/icon_phone"
+                    android:icon="@drawable/exit_drawer"
                     android:title="Exit" />
 
             </group>
