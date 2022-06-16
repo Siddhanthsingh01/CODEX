@@ -322,26 +322,21 @@ public class homeOptions extends AppCompatActivity implements NavigationView.OnN
         } else if (item.getItemId() == R.id.javacomiler) {
             Intent intent = new Intent(homeOptions.this, compiler.class);
             intent.putExtra("url","https://www.w3schools.com/java/tryjava.asp?filename=demo_compiler");
-            startActivity(intent);
-            finish();
 
         } else if (item.getItemId() == R.id.pythoncomiler) {
             Intent intent = new Intent(homeOptions.this, compiler.class);
             intent.putExtra("url","https://www.w3schools.com/python/trypython.asp?filename=demo_default");
             startActivity(intent);
-            finish();
 
         } else if (item.getItemId() == R.id.ccomiler) {
             Intent intent = new Intent(homeOptions.this, compiler.class);
             intent.putExtra("url","https://www.w3schools.com/c/tryc.php?filename=demo_compiler");
             startActivity(intent);
-            finish();
 
         } else if (item.getItemId() == R.id.cpluscomiler) {
             Intent intent = new Intent(homeOptions.this, compiler.class);
             intent.putExtra("url","https://www.w3schools.com/cpp/trycpp.asp?filename=demo_compiler");
             startActivity(intent);
-            finish();
 
         } else if (item.getItemId() == R.id.javaquiz) {
             Intent intent = new Intent(homeOptions.this, quiz.class);

@@ -33,7 +33,7 @@ public class java_one extends AppCompatActivity {
     PDFView pdfView;
 
     // url of our PDF file.
-    String pdfurl = "https://firebasestorage.googleapis.com/v0/b/codex-4a5c4.appspot.com/o/java%2Fhello%20in%20java.pdf?alt=media&token=64687b7d-edc4-406e-a3f1-313bf7ad58f1";
+    String pdfurl = "https://firebasestorage.googleapis.com/v0/b/codex-4a5c4.appspot.com/o/java%2Fjava%20program.pdf?alt=media&token=f2849e00-0287-471f-893f-b895b79fa3c4";
 
     VideoView videoView;
 
@@ -63,7 +63,7 @@ public class java_one extends AppCompatActivity {
         videoView = findViewById(R.id.video_view);
         videoView.setMediaController(mediaController);
         mediaController.setAnchorView(videoView);
-        Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/codex-4a5c4.appspot.com/o/file_example_MP4_480_1_5MG.mp4?alt=media&token=5ec602ea-176a-445c-905a-cb3fba116dbb");
+        Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/codex-4a5c4.appspot.com/o/video%2Fjava.mp4?alt=media&token=f26bf485-8a9e-479c-89a8-b255e59e796a");
         videoView.setVideoURI(uri);
         videoView.start();
 
@@ -139,7 +139,8 @@ public class java_one extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         Intent intent = new Intent(java_one.this, compiler.class);
-                        intent.putExtra("url","https://www.w3schools.com/java/tryjava.asp?filename=demo_compiler");
+                        intent.putExtra("url","htt" +
+                                "ps://www.w3schools.com/java/tryjava.asp?filename=demo_compiler");
                         startActivity(intent);
                     }
                 });
